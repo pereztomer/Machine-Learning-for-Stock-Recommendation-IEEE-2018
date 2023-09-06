@@ -48,7 +48,7 @@ Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [
 ### __Focasting Model__:
 + __Input__: 11 Excel files of cleaned data about fundamental financial ratios (sector 10-Energy, sector 15-Materials, sector 20-Industrials, sector 25-Consumer Discretionary, sector 30-Consumer Staples, sector 35-Health Care, sector 40-Financials, sector 45-Information Technology, sector 50-Telecommunication Services, sector 55-Utilities, sector 60-Real Estate)
 + __Python Script__: 2 Scripts
-  + [ml_model.py](code/ml_model.py): The forecasting function (cornerstone of this project)
+  + [ml_model.py](project_code/ml_model.py): The forecasting function (cornerstone of this project)
   + [fundamental_run_model.py](fundamental_run_model.py): The main function to run the forecasting model  
 ```shell
 
@@ -60,9 +60,9 @@ python3 fundamental_run_model.py \
 
 
 + __Old R Script__: 3 R Scripts
-  + [fundamental_run_model.R](code/fundamental_run_model.R): The main function to run the forecasting model
-  + [fundamental_ML_model.R](code/fundamental_ML_model.R): The forecasting function (cornerstone of this project)
-  + [fundamental_select_stock.R](code/fundamental_select_stock.R): The function to select top 20% stocks in each sector
+  + [fundamental_run_model.R](project_code/fundamental_run_model.R): The main function to run the forecasting model
+  + [fundamental_ML_model.R](project_code/fundamental_ML_model.R): The forecasting function (cornerstone of this project)
+  + [fundamental_select_stock.R](project_code/fundamental_select_stock.R): The function to select top 20% stocks in each sector
 + __Output__: [a CSV file](Data/2-portfolio_data/stocks_selected_total_user8.csv) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __trade_date__: the date to execute the trades
 
 
@@ -95,7 +95,7 @@ python3 fundamental_run_model.py \
   + [SPX adjusted daily close price](Data/1-spx_price.xlsx): The Market Index (Overall Benchmark)
 
 + __Script__: 1 Python jupyter notebook Script
-  + [fundamental_back_testing.ipynb](code/fundamental_back_testing.ipynb): The back-testing function
+  + [fundamental_back_testing.ipynb](project_code/fundamental_back_testing.ipynb): The back-testing function
 
 + __Output__:
   1. Quarterly return of our portfolio with transaction cost
